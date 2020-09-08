@@ -7,4 +7,4 @@ Handy for Maths revision...
 
 Convert Time, Length and Weight.
 
-Instructions on how to convert are also avaliable.
+Instructions on how to convert are also available.
