@@ -54,51 +54,53 @@ while True:
         #user input
         user_input = input("Select an option: ")
         def choiceOne(option):
-            #mm
-            op_one = "mm to cm"
-            op_two = "mm to m"
-            op_three = "mm to km"
-            #cm
-            op_four = "cm to mm"
-            op_five = "cm to m"
-            op_six = "cm to km"
-            #m
-            op_seven = "m to mm"
-            op_eight = "m to cm"
-            op_nine = "m to km"
-            #km
-            op_ten = "km to mm"
-            op_eleven = "km to cm"
-            op_twelve = "km to m"
+            options = {
+                #mm
+                "one": "mm to cm",
+                "two": "mm to m",
+                "three": "mm to km",
+                #cm
+                "four": "cm to mm",
+                "five": "cm to m",
+                "six": "cm to km",
+                #m
+                "seven": "m to mm",
+                "eight": "m to cm",
+                "nine": "m to km",
+                #km
+                "ten": "km to mm",
+                "eleven": "km to cm",
+                "twelve": "km to m"
+            }
             #user number
             user_num = int(input("Inptut in your number: "))
             #mm
-            if user_input == op_one:
+            if user_input == options["one"]:
                 print(user_num / 10)
-            elif user_input == op_two:
+            elif user_input == options["two"]:
                 print(user_num / 1000)
-            elif user_input == op_three:
+            elif user_input == options["three"]:
                 print(user_num / 1000000)
             #cm
-            elif user_input == op_four:
+            elif user_input == options["four"]:
                 print(user_num * 10)
-            elif user_input == op_five:
+            elif user_input == options["five"]:
                 print(user_num / 100)  
-            elif user_input == op_six:
+            elif user_input == options["six"]:
                 print(user_num / 1000)
             #m
-            elif user_input == op_seven:
+            elif user_input == options["seven"]:
                 print(user_num * 1000)
-            elif user_input == op_eight:
+            elif user_input == options["eight"]:
                 print(user_num * 100)
-            elif user_input == op_nine:
+            elif user_input == options["nine"]:
                 print(user_num / 100)
             #km    
-            elif user_input == op_ten:
+            elif user_input == options["ten"]:
                 print(user_num * 1000000)
-            elif user_input == op_eleven:
+            elif user_input == options["eleven"]:
                 print(user_num * 10000)
-            elif user_input == op_twelve:
+            elif user_input == options["twelve"]:
                 print(user_num / 1000)
             else:
                 print("Invalid response.. returning...")
@@ -109,39 +111,48 @@ while True:
         userExit()
         
     elif user_choice == 2:
-        print("Weight conversion options")
-        print("mg to g")
-        print("g to kg")
-        print("")
-        print("g to mg")
-        print("g to kg")
-        print("")
-        print("kg to mg")
-        print("kg to g")
-        print("")
+        print(
+            '''
+            Weight conversion options
+
+            mg to g
+            mg to kg
+
+            g to mg
+            g to kg
+
+            kg to mg
+            kg to g
+            '''
+        )
         #user input
         user_input = input("Select an option: ")
         def choiceTwo(option):
             #mg
-            op_one = "mg to g"
-            op_two = "g to kg"
-            #g
-            op_three = "g to mg"
-            op_four = "kg to g"
-            #kg
-            op_four = "kg to mg"
-            op_five = "kg to g"
+            options = {
+                #mg
+                "one": "mg to g",
+                "two": "mg to kg",
+                #g
+                "three": "g to mg",
+                "four": "g to kg",
+                #kg
+                "five": "kg to mg",
+                "six": "kg to g"            
+            }
             #user_number
             user_num = int(input("Input your number: "))
-            if user_input == op_one:
+            if user_input == options["one"]:
                 print(user_num / 1000)
-            elif user_input == op_two:
+            elif user_input == options["two"]:
+                print(user_num / 1,000,000)
+            elif user_input == options["three"]:
+                print(user_num * 1000)
+            elif user_input == options["four"]:
                 print(user_num / 1000)
-            elif user_input == op_three:
-                print(user_num * 100)
-            elif user_input == op_four:
-                print(user_num * 1000000)
-            elif user_input == op_five:
+            elif user_input == options["five"]:
+                print(user_num * 1,000,000)
+            elif user_input == options["six"]:
                 print(user_num * 1000)
         choiceTwo(user_choice)
         userExit()
@@ -168,51 +179,57 @@ while True:
         #user input
         user_input = input("Select an option: ")
         def choiceThree(option):
-            #ms
-            op_one = "ms to s"
-            op_two = "ms to m"
-            op_three = "ms to hr"
-            #s
-            op_four = "s to ms"
-            op_five = "s to m"
-            op_six = "s to hr"
-            #m
-            op_seven = "m to ms"
-            op_eight = "m to s"
-            op_nine = "m to hr"
-            #hr
-            op_ten = "hr to ms"
-            op_eleven = "hr to s"
-            op_twelve = "hr to m"
+            options = {
+                #ms
+                "one": "ms to s",
+                "two": "ms to m",
+                "three": "ms to hr",
+                #s
+                "four": "s to ms",
+                "five": "s to m",
+                "six": "s to hr",
+                #m
+                "seven": "m to ms",
+                "eight": "m to s",
+                "nine": "m to hr",
+                #hr
+                "ten": "hr to ms",
+                "eleven": "hr to s",
+                "twelve": "hr to m"
+            }
             #user number
             user_num = int(input("Input your number: "))
+            '''
+            for key in options:
+                if user_input == options[key]
+            '''
             #ms
-            if user_input == op_one:
+            if user_input == options["one"]:
                 print(user_num / 1000)
-            elif user_input == op_two:
+            elif user_input == options["two"]:
                 print(user_num / 60000)
-            elif user_input == op_three:
+            elif user_input == options["three"]:
                 print(user_num / 3,600,000)
             #s
-            elif user_input == op_four:
+            elif user_input == options["four"]:
                 print(user_num * 1000)
-            elif user_input == op_five:
+            elif user_input == options["five"]:
                 print(user_num / 60)  
-            elif user_input == op_six:
+            elif user_input == options["six"]:
                 print(user_num / 3600)
             #m
-            elif user_input == op_seven:
+            elif user_input == options["seven"]:
                 print(user_num * 60000)
-            elif user_input == op_eight:
+            elif user_input == options["eight"]:
                 print(user_num * 60)
-            elif user_input == op_nine:
+            elif user_input == options["nine"]:
                 print(user_num / 60)
             #hr    
-            elif user_input == op_ten:
+            elif user_input == options["ten"]:
                 print(user_num * 3,600,000)
-            elif user_input == op_eleven:
+            elif user_input == options["eleven"]:
                 print(user_num * 3600)
-            elif user_input == op_twelve:
+            elif user_input == options["twelve"]:
                 print(user_num * 60)
             else:
                 print("Invalid response.. returning...")
