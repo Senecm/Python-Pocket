@@ -1,3 +1,7 @@
+__author__ = "Toenail"
+__license__ = "Unlicensed"
+__property__ = "For"
+
 print("Welcome to factor finder\n")
 user_num = int(input("Please enter a number: "))
 #main function
