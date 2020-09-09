@@ -2,7 +2,7 @@ import sys
 from time import sleep
 __Author__ = "Toenail"
 __Lisence__ = "Unliscenced", False
-__Propert__ = "For"
+__Property__ = "For"
     #exit protocol
 def userExit():
     while True:
@@ -109,9 +109,43 @@ while True:
         userExit()
         
     elif user_choice == 2:
-        print("Weight options")
+        print("Weight conversion options")
+        print("mg to g")
+        print("g to kg")
         print("")
-    #Time
+        print("g to mg")
+        print("g to kg")
+        print("")
+        print("kg to mg")
+        print("kg to g")
+        print("")
+        #user input
+        user_input = input("Select an option: ")
+        def choiceTwo(option):
+            #mg
+            op_one = "mg to g"
+            op_two = "g to kg"
+            #g
+            op_three = "g to mg"
+            op_four = "kg to g"
+            #kg
+            op_four = "kg to mg"
+            op_five = "kg to g"
+            #user_number
+            user_num = int(input("Input your number: "))
+            if user_input == op_one:
+                print(user_num / 1000)
+            elif user_input == op_two:
+                print(user_num / 1000)
+            elif user_input == op_three:
+                print(user_num * 100)
+            elif user_input == op_four:
+                print(user_num * 1000000)
+            elif user_input == op_five:
+                print(user_num * 1000)
+        choiceTwo(user_choice)
+        userExit()
+    #Time 
     elif user_choice == 3:
         print("Time conversion options:")
         print("")
@@ -133,7 +167,7 @@ while True:
         print("")
         #user input
         user_input = input("Select an option: ")
-        def choiceTwo(option):
+        def choiceThree(option):
             #ms
             op_one = "ms to s"
             op_two = "ms to m"
@@ -184,7 +218,7 @@ while True:
                 print("Invalid response.. returning...")
                 return
         #calling the function
-        choiceTwo(user_input)
+        choiceThree(user_input)
         userExit()
 
 
