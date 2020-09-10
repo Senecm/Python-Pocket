@@ -1,4 +1,4 @@
-# MasterConvertor
+# Python Pocket
 Some small projects I made for an old friend...
 
 !A comprehensive convertor, that is hopefully faster than using Google to find each individual answer. 
