@@ -3,7 +3,7 @@ Some small projects I made for an old friend...
 
 ## Math
 Handy for Maths revision...
-**!A comprehensive convertor, that is hopefully faster than using Google to find each individual answer. **
+- **!A comprehensive convertor, enter an option then a number and a program will show you the conversion! **
 
 *Convert Time, Length and Weight.*
 
@@ -23,7 +23,7 @@ Comming soon...
 
 ## Miscellaneous
 
-**!A lyric locater, enter a name of a song and the program will search Genius**
+- **!A lyric locater, enter a name of a song and the program will search Genius**
 
 *Search to your hearts content*
 
