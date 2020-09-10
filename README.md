@@ -4,7 +4,7 @@ Some small projects I made for an old friend...
 ## Math
 Handy for Maths revision...
 
-- **!A comprehensive convertor, enter an option then a number and a program will show you the conversion! **
+- **!A comprehensive convertor, enter an option then a number and a program will show you the conversion!**
 
 *Convert Time, Length and Weight.*
 
