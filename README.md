@@ -23,13 +23,16 @@ Handy for science revision...
 **!A element locater, enter a name of an element and the program will show you which element it is!**
 
 - *find the full name of an atomic symbol*
-Comming soon...
 
 ## Miscellaneous
 
 **!A lyric locater, enter a name of a song and the program will search Genius!**
 
 - *Search to your hearts content*
+
+**!A Chess Module to help you play chess!**
+
+- *ALWAYS WATCH THE BISHOPS!*
 
 ## Programming
 
