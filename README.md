@@ -39,6 +39,14 @@ Handy for science revision...
 **!A Import reference for python, enter the option of the listed import libraries and it will display all the options for them!**!
 - *lots of libraries, constantly updated*
 
+>Written by Kevin
 
+![Snake](https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png)
+
+A site of a good friend.
+
+Check it out!
+
+[PheonixEntertainment](https://phoenix-entertainment.github.io/Phoenix-Entertainment/)
 
 
