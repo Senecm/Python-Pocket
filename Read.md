@@ -10,8 +10,8 @@
 
 ## To Do:
 
-1. *Master Convertor* - Write instructions for each conversion
-2. ~~*Element Locator* - Create and write~~
+1. *Master Convertor* - ~~Write instructions for each conversion~~, Add speed, distance and time functionality
+2. *Element Locator* - ~~Create and write~~, Add a google search function
 3. *Import Reference* - Update regularly 
 4. *Chezz.py* - Make the pieces, move generation, and main functionality
 
