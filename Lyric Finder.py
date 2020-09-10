@@ -3,7 +3,7 @@ import webbrowser
 __author__ = "Kevin"
 __licsence__ = "unlicenced"
 while True:
-    user_input = input("Enter a name of a song: ")
+    user_input = input("Enter a name of a song: ").replace(" ", "+")
     print("openin in new tab...")
     webbrowser.open('https://genius.com/search?q='+user_input, new=2)
     user_exit = input("Exit(Y/N)?")
