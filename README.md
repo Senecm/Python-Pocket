@@ -12,11 +12,14 @@ Handy for Maths revision...
 
 Big thanks to Sebby37 for some optimisation.
 
+
 - **!A factor finder, that is hopefully much faster than a calculator or a brain!**
 
 *find any positive numbers factors.*
 
+
 ## Science
+Handy for science revision...
 - **!A element locater, enter a name of an element and the program will show you which element it is!**
 
 *find the full name of an atomic symbol*
