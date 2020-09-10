@@ -75,31 +75,43 @@ while True:
             #mm
             if user_input == options["one"]:
                 print(user_num / 10)
+                print("To convert, / 10")
             elif user_input == options["two"]:
                 print(user_num / 1000)
+                print("To convert, / 1000")
             elif user_input == options["three"]:
-                print(user_num / 1000000)
+                print(user_num / 1,000,000)
+                print("To convert, / 1,000,000")
             #cm
             elif user_input == options["four"]:
                 print(user_num * 10)
+                print("To convert, * 10")
             elif user_input == options["five"]:
-                print(user_num / 100)  
+                print(user_num / 100)
+                print("To convert, / 100")  
             elif user_input == options["six"]:
                 print(user_num / 1000)
+                print("To convert, / 1000")
             #m
             elif user_input == options["seven"]:
                 print(user_num * 1000)
+                print("To convert, * 1000")
             elif user_input == options["eight"]:
                 print(user_num * 100)
+                print("To convert, * 100")
             elif user_input == options["nine"]:
                 print(user_num / 100)
+                print("To convert, / 100")
             #km    
             elif user_input == options["ten"]:
-                print(user_num * 1000000)
+                print(user_num * 1,000,000)
+                print("To convert, * 1,000,000")
             elif user_input == options["eleven"]:
                 print(user_num * 10000)
+                print("To convert, * 10000")
             elif user_input == options["twelve"]:
                 print(user_num / 1000)
+                print("To convert, /100")
             else:
                 print("Invalid response.. returning...")
                 return     
@@ -142,16 +154,22 @@ while True:
             user_num = int(input("Input your number: "))
             if user_input == options["one"]:
                 print(user_num / 1000)
+                print("To convert, / 1000")
             elif user_input == options["two"]:
                 print(user_num / 1,000,000)
+                print("To convert, / 1,000,000")
             elif user_input == options["three"]:
                 print(user_num * 1000)
+                print("To convert, * 1009")
             elif user_input == options["four"]:
                 print(user_num / 1000)
+                print("To convert, / 1000")
             elif user_input == options["five"]:
                 print(user_num * 1,000,000)
+                print("To convert, * 1,000,000")
             elif user_input == options["six"]:
                 print(user_num * 1000)
+                print("To convert, * 1000")
         choiceTwo(user_choice)
         userExit()
     #Time 
@@ -207,31 +225,43 @@ while True:
             #ms
             if user_input == options["one"]:
                 print(user_num / 1000)
+                print("To convert, / 1000")
             elif user_input == options["two"]:
                 print(user_num / 60000)
+                print("To convert, / 60000")
             elif user_input == options["three"]:
                 print(user_num / 3,600,000)
+                print("To convert, / 3,600,000")
             #s
             elif user_input == options["four"]:
                 print(user_num * 1000)
+                print("To convert, * 1000")
             elif user_input == options["five"]:
                 print(user_num / 60)  
+                print("To convert, / 60")
             elif user_input == options["six"]:
                 print(user_num / 3600)
+                print("To convert, / 3600")
             #m
             elif user_input == options["seven"]:
                 print(user_num * 60000)
+                print("To convert, * 60000")
             elif user_input == options["eight"]:
                 print(user_num * 60)
+                print("To convert, * 60")
             elif user_input == options["nine"]:
                 print(user_num / 60)
+                print("To convert, / 60")
             #hr    
             elif user_input == options["ten"]:
                 print(user_num * 3,600,000)
+                print("To convert, 3,600,000")
             elif user_input == options["eleven"]:
                 print(user_num * 3600)
+                print("To convert, * 3600")
             elif user_input == options["twelve"]:
                 print(user_num * 60)
+                print("To convert, * 60")
             else:
                 print("Invalid response.. returning...")
                 return
