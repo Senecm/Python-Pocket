@@ -3,6 +3,7 @@ Some small projects I made for an old friend...
 
 ## Math
 Handy for Maths revision...
+
 - **!A comprehensive convertor, enter an option then a number and a program will show you the conversion! **
 
 *Convert Time, Length and Weight.*
@@ -11,7 +12,7 @@ Handy for Maths revision...
 
 Big thanks to Sebby37 for some optimisation.
 
-**!A factor finder, that is hopefully much faster than a calculator or a brain!**
+- **!A factor finder, that is hopefully much faster than a calculator or a brain!**
 
 *find any positive numbers factors.*
 
