@@ -31,6 +31,11 @@ Comming soon...
 
 - *Search to your hearts content*
 
+## Programming
+
+**!A Import reference for python, enter the option of the listed import libraries and it will display all the options for them!**!
+- *lots of librarys, constantly updated*
+
 
 
 
