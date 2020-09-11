@@ -10,8 +10,6 @@ Handy for Maths revision...
 
 - *Instructions on how to convert are also available.*
 
-Big thanks to Sebby37 for some optimisation.
-
 
 **!A factor finder, that is hopefully much faster than a calculator or a brain!**
 
@@ -41,6 +39,13 @@ Handy for science revision...
 
 **!A Import reference for python, enter the option of the listed import libraries and it will display all the options for them!**!
 - *lots of libraries, constantly updated*
+
+
+Big thanks to Sebby37 for some optimisation.
+Check out him here:
+
+[Sebby37Link] https://sebby37.github.io/
+[SebbyGithub] https://github.com/Sebby37
 
 >Written by Kevin, made with love using vscode
 
