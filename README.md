@@ -34,6 +34,9 @@ Handy for science revision...
 
 - *ALWAYS WATCH THE BISHOPS!*
 
+**!A small chess game made usin turtle!**
+- *Play and fail and play and fail and play and fail and play*
+
 ## Programming
 
 **!A Import reference for python, enter the option of the listed import libraries and it will display all the options for them!**!
