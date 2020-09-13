@@ -24,6 +24,8 @@
 5. *Chezz (module)*
     - Create,
     - Add piece functions
+6. *Element locator*
+    - Add atomic number functionality
 ---
 
 >Written by Kevin
