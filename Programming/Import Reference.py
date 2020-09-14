@@ -6,6 +6,8 @@ import time
 import datetime
 import json
 import webbrowser
+import turtle
+import Flask
 print("welcome to the module reference...\n")
 print("select an option below...\n")
 print(
@@ -18,6 +20,8 @@ print(
     6. datetime
     7. json
     8. webbrowser
+    9. turtle
+    10. Flask
     '''
 )
 user_input = input("Option: ")
@@ -39,3 +43,9 @@ elif user_input == 5:
 elif user_input == 6:
     for i in dir(webbrowser):
         print(i)
+elif user_input == 7:
+    for i in dir(turtle):
+        print(i)
+elif user_input == 8:
+    for i in dir(Flask):
+        print (i)
