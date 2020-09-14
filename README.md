@@ -15,6 +15,9 @@ Handy for Maths revision...
 
 - *find any positive numbers factors.*
 
+**!A MMMR machine, calculate Mean, Median, Mode and Range!**
+- *do big things*
+
 
 ## Science
 Handy for science revision...
