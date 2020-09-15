@@ -1,12 +1,11 @@
 __author__ = "Kevin"
 __liscence__ = "unliscenced"
 
-import sys
 def user_exit():
     user_choice = input("Quit (Y/N)")
     if user_choice == "Y":
         print("goodbye")
-        sys.exit(0)
+        quit(0)
     elif user_choice == "N":
         print("returning to main menu...")
         return
