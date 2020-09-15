@@ -2,6 +2,15 @@ __author__ = "Toenail"
 __license__ = "Unlicensed"
 __property__ = "For"
 
+def user_exit():
+    user_choice = input("quit (Y/N): ")
+    if user_choice == "Y":
+        quit(0)
+    elif user_choice == "N":
+        return
+    else:
+        print("cannot understand, returning to main menu...")
+        return
 print("Welcome to factor finder\n")
 user_num = int(input("Please enter a number: "))
 #main function
