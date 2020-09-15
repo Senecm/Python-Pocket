@@ -1,4 +1,3 @@
-import sys
 from time import sleep
 __Author__ = "Toenail"
 __Lisence__ = "Unliscenced", False
@@ -9,7 +8,7 @@ def userExit():
         user_exit = input("Input Q to quit or M to return to the main menu: ")
         if user_exit == "Q":
             print("Guten tag")
-            sys.exit(0)
+            quit(0)
         elif user_exit == "M":
             break
         else: 
