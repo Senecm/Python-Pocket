@@ -1,7 +1,6 @@
 __author__ = "Kevin"
 __Liscence  = "Unliscenced"
 
-import sys
 from time import sleep
 import webbrowser as wb
 
@@ -10,7 +9,7 @@ def user_exit():
     user_exit = input("Quit (Y/N)")
     if user_exit == "Y":
         print("Goodbye")
-        sys.exit(0)
+        quit(0)
     elif user_exit == "N":
         print("Returning to main menu...")
         sleep(0.5)
