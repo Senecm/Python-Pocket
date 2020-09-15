@@ -17,3 +17,5 @@ def user_exit():
 
 ```
 This is a simple function, which is called by the main loop of the code to ask the user to exit. If they respond with yes, the function quits the python interpreter using `sys.exit(0)` from the `sys` module. If they respond with no, the function breaks and the main loop is initiated again. If they input a value which is neither, the program will then return to the main menu.
+
+UPDATE: quit(0) also does the same thing.
