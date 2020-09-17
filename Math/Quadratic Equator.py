@@ -1,17 +1,13 @@
 import math
+a = int(input("a: "))
+b = int(input("b: "))
+c = int(input("c: "))
 
-a = int(input("Input A: "))
-b = int(input("Input B: "))
-c = int(input("Input C: "))
+def quad(a, b, c):
+    try:
+        return (0-b+math.sqrt(b**2-4*a*c))/(2*a), (0-b-math.sqrt(b**2-4*a*c))/(2*a)
+    except Exception as e:
+        return e
 
-def equator(a, b, c):
-    global num_plus
-    num_plus = (0-b + math.sqrt(b**2 - 4 * a * c) / 2)
-    global num_minus
-    num_minus = (0-b - math.sqrt(b**2 - 4 * a * c) / 2)
-equator(a, b, c)
-try: 
-    print(f"X = {num_plus} or {num_minus}")
-except Exception as e:
-    print(e)
-    print("The square root of", (b**2 - 4 * a * c))
+print("+ first, then - second:")
+print(quad(a, b, c))
