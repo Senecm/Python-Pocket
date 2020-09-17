@@ -1,7 +1,6 @@
+__Author__ = "Gordan"
+
 from time import sleep
-__Author__ = "Toenail"
-__Lisence__ = "Unliscenced", False
-__Property__ = "For"
     #exit protocol
 def userExit():
     while True:

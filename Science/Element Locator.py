@@ -1,5 +1,4 @@
-__author__ = "Kevin"
-__Liscence  = "Unliscenced"
+__author__ = "Gordan"
 
 from time import sleep
 import webbrowser as wb

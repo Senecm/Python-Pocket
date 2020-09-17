@@ -1,6 +1,4 @@
-__author__ = "Toenail"
-__license__ = "Unlicensed"
-__property__ = "For"
+__author__ = "Gordan"
 
 def user_exit():
     user_choice = input("quit (Y/N): ")
