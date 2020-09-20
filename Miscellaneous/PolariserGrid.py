@@ -78,7 +78,33 @@ for y in range(0, 500):
     if y % 20 == 0:
         pygame.draw.line(win, (125, 125, 125), (0, y), (500, y))
         pygame.display.flip()
-    
+
+#when senec trys to put it in the for loop :())()()()()
+#################REFERENCING###########################
+'''
+#0,0
+pygame.draw.circle(win, (0, 0, 0), (0, 0), 15)
+#250,250
+pygame.draw.circle(win, (0, 0, 0), (250, 250), 15)
+#500,500
+''' #looks ugly, use only when needed
+pygame.draw.circle(win, (0, 0, 0), (500, 500), 15)
+#top of screen
+pygame.draw.circle(win, (0, 0, 0), (250, 0), 15)
+#bottom of screen
+pygame.draw.circle(win, (0, 0, 0), (250, 500), 15)
+#middle left of screen
+pygame.draw.circle(win, (0, 0, 0), (0, 250), 15)
+#middle right of screen
+pygame.draw.circle(win, (0, 0, 0), (500, 250), 15)
+
+###########drawing the cartisean plane###################
+#Y
+pygame.draw.line(win, (0, 0, 0), (250, 0), (250, 500), 5)
+#X
+pygame.draw.line(win, (0, 0, 0), (0, 250), (500, 250), 5)
+pygame.display.flip()
+
 '''
 # My code for cartesian plane:
 pygame.draw.line(win, (255, 255, 255), (250, 0), (250, 500), 5)
