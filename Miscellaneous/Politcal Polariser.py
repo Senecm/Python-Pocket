@@ -68,7 +68,7 @@ while True:
         LEFTRIGHTSWAY - 0.5
     else:
         InvalidInput()
-    userInputFour = input("The government always knows best.")
+    userInputFour = input("The government always knows best. ")
     if userInputThree == "A":
         AUTHLIBSWAY + 2
         LEFTRIGHTSWAY + 0.5
@@ -84,7 +84,7 @@ while True:
     pygame.display.set_caption("Political Polariser")
 
     #drawing the plane
-    pygame.draw.line(win, (255, 255, 255), (100, 100), (0, 500), width=4)
+    pygame.draw.line(win, (255, 255, 255), (100, 100), (100, 100))
     pygame.display.flip()
     #main loop
     status = True

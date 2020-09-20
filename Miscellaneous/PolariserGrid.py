@@ -1,0 +1,82 @@
+import pygame
+    
+pygame.init()
+win = pygame.display.set_mode((500, 500))
+pygame.display.set_caption("Political Polariser")
+
+# pygame.draw.circle(win, (255, 255, 255), (x, y), radius)
+
+the_y = 0
+#harverd referencing
+#################REFERENCING###########################
+#0,0
+pygame.draw.circle(win, (255, 255, 255), (0, 0), 15)
+#250,250
+pygame.draw.circle(win, (255, 255, 255), (250, 250), 15)
+#500,500
+pygame.draw.circle(win, (255, 255, 255), (500, 500), 15)
+#top of screen
+pygame.draw.circle(win, (255, 255, 255), (250, 0), 15)
+#bottom of screen
+pygame.draw.circle(win, (255, 255, 255), (250, 500), 15)
+#middle left of screen
+pygame.draw.circle(win, (255, 255, 255), (0, 250), 15)
+#middle right of screen
+pygame.draw.circle(win, (255, 255, 255), (500, 250), 15)
+
+###########drawing the cartisean plane###################
+#Y
+pygame.draw.line(win, (248, 255, 11), (250, 0), (250, 500), 5)
+#X
+pygame.draw.line(win, (248, 255, 11), (0, 250), (500, 250), 5)
+pygame.display.flip()
+
+###########################colouring the quadrants###############################
+
+
+#################drawing the grid################## # without using images :(((()))))))
+'''
+for i in range(0, 500): # looping down the x
+    XCOOSTART = 0
+    XCOOEND = 0
+    pygame.draw.line(win, (255, 255, 255), (XCOOSTART, XCOOSTART), (YCOOSTART, YCOOEND))
+    XCOOSTART += 1
+    XCOOEND += 1
+for i in range(0, 500): #looping down the y
+    YCOOSTART = 0
+    YCOOEND = 0
+    pygame.draw.line(win, (255, 255, 255), (XCOOSTART, XCOOSTART), (YCOOSTART, YCOOEND))
+    YCOOSTART += 1
+    YCOOEND += 1
+'''
+#My (seb's b# gaming) turn #dont forget the 15 ms in my name
+for x in range(0, 500):
+    if x % 20 == 0:
+        pygame.draw.line(win, (125, 125, 125), (x, 0), (x, 500))
+        pygame.display.flip()
+
+for y in range(0, 500):
+    if y % 20 == 0:
+        pygame.draw.line(win, (125, 125, 125), (0, y), (500, y))
+        pygame.display.flip()
+    
+'''
+# My code for cartesian plane:
+pygame.draw.line(win, (255, 255, 255), (250, 0), (250, 500), 5)
+pygame.draw.line(win, (255, 255, 255), (0, 250), (500, 250), 5)
+'''
+#main loop
+while True:
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            break
+    '''
+    pygame.draw.circle(win, (255, 255, 255), (250, the_y), 15)
+    the_y += 1
+    if the_y > 500:
+        the_y = 0        #whats this
+    pygame.draw.rectangle(win, (0, 0, 0), (0, 0), (500, 500))
+    '''
+pygame.quit()
+quit(0)
