@@ -1,4 +1,5 @@
 __author__ = "Gordon"
+__author__ = "Sebba37"
 
 #imports
 import pygame
@@ -105,22 +106,7 @@ while True:
     win = pygame.display.set_mode((500, 500))
     pygame.display.set_caption("Political Polariser")
     
-    ###########################colouring the quadrants###############################
-    #Auth right quadrant
-    authRightCol = (0, 0, 255)
-    pygame.draw.rect(win, authRightCol, (250, 0, 500, 250))
-    #Auth left quadrant
-    authLeftColours = (255, 0, 0)
-    pygame.draw.rect(win, authLeftColours, (0, 0, 250, 250))
-    #Lib left quadrant
-    libLeftColours = (0, 255, 0) #NO STOP, trust me ive got this
-    pygame.draw.rect(win, libLeftColours, (0, 250, 250, 250))
-    #lib right quadrant
-    #pygame.draw.rect(win, (255, 255, 0), (250, 250, 500, 500))
-    libRightColours = [(255, 255, 0), (213, 0, 255)]
-    pygame.draw.rect(win, random.choice(libRightColours), (250, 250, 500, 500)) #gordan making it purple
-    
-    #################REFERENCING###########################
+        #################REFERENCING###########################
     '''
     #0,0
     pygame.draw.circle(win, (0, 0, 0), (0, 0), 15)
@@ -138,6 +124,24 @@ while True:
     pygame.draw.circle(win, (0, 0, 0), (0, 250), 15)
     #middle right of screen
     pygame.draw.circle(win, (0, 0, 0), (500, 250), 15)
+
+    ###########################colouring the quadrants###############################
+    #Auth right quadrant
+    authRightCol = (0, 0, 255)
+    pygame.draw.rect(win, authRightCol, (250, 0, 500, 250))
+    #Auth left quadrant
+    authLeftColours = (255, 0, 0)
+    pygame.draw.rect(win, authLeftColours, (0, 0, 250, 250))
+    #Lib left quadrant
+    libLeftColours = (0, 255, 0) #NO STOP, trust me ive got this
+    pygame.draw.rect(win, libLeftColours, (0, 250, 250, 250))
+    #lib right quadrant
+    #pygame.draw.rect(win, (255, 255, 0), (250, 250, 500, 500))
+    libRightColours = [(255, 255, 0), (213, 0, 255)]
+    pygame.draw.rect(win, random.choice(libRightColours), (250, 250, 500, 500)) #gordan making it purple
+
+    ###########################plotting user input##################
+    pygame.draw.circle(win, (0, 0, 0), (int(LEFTRIGHTSWAY), int(AUTHLIBSWAY)), 5)
     
     ###########drawing the cartisean plane#########
     ###############################################
@@ -146,8 +150,6 @@ while True:
     #X
     pygame.draw.line(win, (0, 0, 0), (0, 250), (500, 250), 5)
     pygame.display.flip()
-    
-    
     
     #################drawing the grid#########
     for x in range(0, 500): 
@@ -159,11 +161,8 @@ while True:
         if y % 20 == 0:
             pygame.draw.line(win, (125, 125, 125), (0, y), (500, y))
             pygame.display.flip()
-        
-    ###############################
-    ####Plotting user input######
-    ############################
-    pygame.draw.circle(win, (0, 0, 0), (int(LEFTRIGHTSWAY), int(AUTHLIBSWAY)), 15)
+    
+    #pygame.draw.circle(win, (0, 0, 0), (50, 50), 15)
     #main loop
     while True:
     
