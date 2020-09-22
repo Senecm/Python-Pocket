@@ -4,7 +4,13 @@ __author__ = "Sebba37"
 #imports
 import pygame
 import random
+'''
+import ideologies
 
+r = ideologies.Pillars()
+e = r.communism()
+print(e)
+'''                                 #testing
 #polarising variable
 LEFTRIGHTSWAY = 0
 AUTHLIBSWAY = 0
@@ -98,8 +104,9 @@ while True:
     else:
         InvalidInput()
 
-    print(AUTHLIBSWAY)
-    print(LEFTRIGHTSWAY)
+    #final results calculation
+    print(f"Your social scale is: {AUTHLIBSWAY}")
+    print(f"Your economic sway is: {LEFTRIGHTSWAY}")
     #UserExit()
     #relaying the results    
     pygame.init()
