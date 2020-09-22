@@ -79,6 +79,11 @@ for y in range(0, 500):
         pygame.draw.line(win, (125, 125, 125), (0, y), (500, y))
         pygame.display.flip()
     
+###############################
+####Plotting user input######
+############################
+#pygame.draw.circle(win, (0, 0, 0), (LEFTRIGHTSWAY, AUTHLIBSWAR), ())
+
 '''
 # My code for cartesian plane:
 pygame.draw.line(win, (255, 255, 255), (250, 0), (250, 500), 5)
