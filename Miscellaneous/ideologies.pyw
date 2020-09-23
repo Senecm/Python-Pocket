@@ -26,11 +26,24 @@ class Plane:
 
 class Pillars:
     def communism(self):
-        print("Communism is a far-left ideology")
-        pass
+        print('''
+        Communism is a far-left ideology whose principles entail a classless society based upon common ownership of the means of production without a state.
+        Communism, debatably, has never been put into practice, rather socialist nations have existed, many underneath the socialist prinicple of Marxist-Leninism,
+        An ideology that advocates for a two step system to communism, beginning first what socialism.
+        ''')
     def fascism(self):
-        pass
-    def monarchism(self):
+        print(
+            '''
+            Fascism is a far-right ideology whose principles entail a authoritarian ultranationalist outlook, characterised by dictorial totalitarian power,
+            Fascism has been put into practice in some countries, most notably the Empire of Japan and the German Reich.
+            '''
+        )
+    def authoritarianism(self):
+        print(
+            '''
+            Authoritarianism is an ideology which encompasses puts emphasis on static control over an individuals life.
+            '''
+        )
         pass
     def Libertarianism(self):
         pass
