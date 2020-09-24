@@ -4,23 +4,18 @@ __author__ = "Sebba37"
 #imports
 import pygame
 import random
-'''
-import ideologies
-
-r = ideologies.Pillars()
-e = r.communism()
-print(e)
-'''                                 #testing
+import ideologies  
+                            #testing
 #polarising variable
-LEFTRIGHTSWAY = 0
-AUTHLIBSWAY = 0
+LEFTRIGHTSWAY = 250
+AUTHLIBSWAY = 250
 
 #exit protocol
 def UserExit():
     userQuit = input("quit (Y/N) ")
     if userQuit == "Y":
         quit(0)
-    elif userQuit == "N":
+    elif userQuit == "N":                             
         return
     else:
         print("Invalid input, quitting...")
@@ -145,10 +140,11 @@ while True:
     #lib right quadrant
     #pygame.draw.rect(win, (255, 255, 0), (250, 250, 500, 500))
     libRightColours = [(255, 255, 0), (213, 0, 255)]
-    pygame.draw.rect(win, random.choice(libRightColours), (250, 250, 500, 500)) #gordan making it purple
+    pygame.draw.rect(win, random.choice(libRightColours), (250, 250, 500, 500))
 
     ###########################plotting user input##################
     pygame.draw.circle(win, (0, 0, 0), (int(LEFTRIGHTSWAY), int(AUTHLIBSWAY)), 5)
+    #pygame.draw.circle(win, (0, 0, 0), (275, 265), 15)# debuging 
     
     ###########drawing the cartisean plane#########
     ###############################################
@@ -179,4 +175,50 @@ while True:
                 quit(0)
                 break
     pygame.quit()
-    quit(0)
+    
+    #ideological info
+    def InfoRelay():
+        #creating an instants of the classes
+        PLANE = ideologies.Plane()
+        PILLARS = ideologies.Pillars()
+        print(
+        '''
+        1. Info about the plane
+        2. Info about the quadrants
+        3. Info about the ideologies
+        '''
+        )
+        user_info_choice = input("pick an option: ")
+        if user_info_choice == 1:
+            PLANE.plane()
+        elif user_info_choice == 2:
+            PLANE.quadrants()
+        elif user_info_choice ==3:
+            print(
+                '''
+                1. Info about communism
+                2. Info about fascism
+                3. Info about authoritarianism
+                4. Info about libertarianism
+                '''
+            )
+            user_info_ideology = input("pick an option: ")
+            if user_info_ideology == 1:
+                PILLARS.communism()
+            elif user_info_ideology == 2:
+                PILLARS.fascism()
+            elif user_info_ideology == 3:
+                PILLARS.authoritarianism()
+            elif user_info_ideology == 4:
+                PILLARS.libertarianism()
+            else:
+                UserExit()
+
+    user_info_exit = input("Want to know more (Y/N)? ")
+    if user_info_exit == "Y":
+        InfoRelay()
+    elif user_info_exit == "N":
+        print("Goodbye...")
+        quit(0)
+    else:
+        UserExit()

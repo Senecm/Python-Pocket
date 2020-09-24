@@ -42,8 +42,16 @@ class Pillars:
         print(
             '''
             Authoritarianism is an ideology which encompasses puts emphasis on static control over an individuals life.
+            It emphasises on strict obedience to authority, even at the cost of personal freedom.
+            There have been many authoritarian countries in the past, most of them not following directly the doctrine of authoritarianism as the sole governmental foundation,
+            but rather, having authoritarianism as a means to keep power, like that in the Soviet Union and the German Reich.
             '''
         )
-        pass
-    def Libertarianism(self):
+    def libertarianism(self):
+        print(
+            '''
+            Libertarianism is an ideology which upholds liberty as its core principle. It emphasises both the individual and communal liberty.
+            Libertariaism seems to maxamise autonomy and political freedom, emphasising freedom of association, individualism and voluntary association.
+            There have been many libertarian countries in the past most of them not using libertarainism as the core ideology, like that of Revolutionary France.            '''
+        )
         pass
