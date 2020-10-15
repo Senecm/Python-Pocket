@@ -1,4 +1,5 @@
 __author__ = "Gordan"
+__author__ = "Sebby37"
 #import notation
 #import PGN
 #introduction
