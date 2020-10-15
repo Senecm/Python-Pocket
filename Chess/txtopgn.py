@@ -7,7 +7,7 @@ print("Welcome.\n")
 print("This program walks you through a set up process to convert your algebraic notation into PGN format.\n")
 print("Converts your written games into PGN to be analyised")
 
-UserInput = input("Input 1 to input data directly into a pgn and 2 to convert a txt file to pgn: ")
+UserInput = int(input("Input 1 to input data directly into a pgn and 2 to convert a txt file to pgn: "))
 if UserInput == 1:
     #naming the file
     filename = str(input("Name your file: "))
@@ -40,8 +40,19 @@ if UserInput == 1:
             o.write(f"{i+1}. {user_inputs[i]} ")
         o.close()
 elif UserInput == 2:
-    filename = str(input("name of the file: "))
-    #getting the directory of the file
-    fileDir = os.path.dirname(os.path.realpath(filename))
+    FILENAME = str(input("Name of the file: "))
+    DIRECTORY = str(input("Specify the directory: (type $ if it is in the current directory): "))
+    if DIRECTORY != "$":
+        print(DIRECTORY)
+    else:
+        curDir = os.getcwd() #getting the currant directory
+        print(curDir) #debug
+        for file in os.listdir(curDir):
+            if file.endswith(".txt"):
+                print(os.path.join(curDir))
+
+    '''
+    fileDir = os.path.dirname(os.path.realpath(f"{filename}.txt"))
     print(fileDir)
+    '''
     #with open(f"")
