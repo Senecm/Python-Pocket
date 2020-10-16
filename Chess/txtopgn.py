@@ -35,7 +35,7 @@ if UserInput == 1:
         o.write(f'[Round "{Round}"]\n')
         o.write(f'[White "{White}"]\n')
         o.write(f'[Black "{Black}"]\n')
-        o.write(f'[Result "{Result}"]\n\n') #vomit face 1
+        o.write(f'[Result "{Result}"]\n\n')
         for i in range(len(user_inputs)):
             o.write(f"{i+1}. {user_inputs[i]} ")
         o.close()
@@ -44,12 +44,24 @@ elif UserInput == 2:
     DIRECTORY = str(input("Specify the directory: (type $ if it is in the current directory): "))
     if DIRECTORY != "$":
         print(DIRECTORY)
+        try:
+            with open(f"{FILENAME}.txt", "r") as o:
+                file = o.read()
+                print(file)
+        except Exception as e:
+            quit(e)
     else:
-        curDir = os.getcwd() #getting the currant directory
-        print(curDir) #debug
-        for file in os.listdir(curDir):
-            if file.endswith(".txt"):
-                print(os.path.join(curDir))
+        #curDir = os.getcwd()
+        curDir = os.path.dirname(os.path.realpath(f"{FILENAME}.txt"))
+        print(curDir)
+        #getting the currant directory
+        try:
+            with open(f"{FILENAME}.txt", "r") as o:
+                file = o.read()
+                print(file)
+        except Exception as e:
+            quit(e)
+
 
     '''
     fileDir = os.path.dirname(os.path.realpath(f"{filename}.txt"))
