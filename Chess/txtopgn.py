@@ -45,18 +45,18 @@ elif UserInput == 2:
     if DIRECTORY != "$":
         print(DIRECTORY)
         try:
-            with open(f"{FILENAME}.txt", "r") as o:
+            with open(f"{DIRECTORY}/{FILENAME}.txt", "r") as o:
                 file = o.read()
                 print(file)
         except Exception as e:
             quit(e)
     else:
         #curDir = os.getcwd()
-        curDir = os.path.dirname(os.path.realpath(f"{FILENAME}.txt"))
-        print(curDir)
+        CURRENTDIRECTORY = str(os.getcwd())
+        print(CURRENTDIRECTORY)
         #getting the currant directory
         try:
-            with open(f"{FILENAME}.txt", "r") as o:
+            with open(f"{CURRENTDIRECTORY}\{FILENAME}.txt", "r") as o:
                 file = o.read()
                 print(file)
         except Exception as e:
