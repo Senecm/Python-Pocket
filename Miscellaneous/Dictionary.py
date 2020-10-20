@@ -1,18 +1,50 @@
 from PyDictionary import PyDictionary
 from tkinter import *
+import tkinter as tk
 import pyttsx3
 import speech_recognition as sr
+#import json
 win = Tk()
 win.geometry("600x500")
 win.title("Dictionary")
+
+def relaySound(word):
+    eng = pyttsx3.init()
+    eng.say(word)
+    eng.runAndWait()
+    
 def findMeaning(word):
     dic = PyDictionary()
-    output = Label(win, text=word, font=("Helvetica", 10))
     try: 
-        print(word)
-        print(dic.meaning(word))
-    except IndexError:
-        print("Could not find your word!")
+        defi = dic.meaning(word)
+        #json.loads(defi)
+        txtare = Text(win, height=10, width=70)
+        txtare.grid(column=0, row=8)
+        txtare.insert(tk.END, defi)
+        btnb = Button(win, text="Listen", bg="black", fg="white", command = lambda: relaySound(txtare.get()))
+        btnb.grid(column=0, row=7)
+    except Exception as e:
+        print(e)
+
+def speechMeaning():
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
+        r.adjust_for_ambient_noise(source)
+        audio = r.listen(source)
+        output = r.recognize_google(audio)
+    dic = PyDictionary()
+    try:
+        defi = dic.meaning(output)
+        lblc = Label(win, text="Activated!", font=("Arial Bold", 10))
+        lblc.grid(column=0, row=11)
+        txtarea = Text(win, height=10, width=70)
+        txtarea.grid(column=0, row=13)
+        txtarea.insert(tk.END, defi)
+        btnb = Button(win, text="Listen", bg="black", fg="white", command = lambda: relaySound(txtarea.get()))
+        btnb.grid(column=0, row=11)
+    except Exception as e:
+        print(e)
+
 lbl = Label(win, text="Tkinter Dictionary", font=("Comic Sans Ms", 50))
 lbl.grid(column=0, row=0)
 lbla = Label(win, text="Enter a word to search for a meaning:", font=("Arial Bold", 15))
@@ -21,23 +53,10 @@ ent = Entry(win, width=50)
 ent.grid(column=0, row=6)
 btn = Button(win, text="Find Meaning", bg="blue", fg="white", command = lambda: findMeaning(ent.get()))
 btn.grid(column=0, row=7)
+lblb = Label(win, text="Say a word to search for a meaning:", font=("Arial Bold", 15))
+lblb.grid(column=0, row=9)
+enta = Entry(win, width = 50)
+enta.grid(column=0, row=10)
+btna = Button(win, text="Activate", bg="blue", fg="white", command = lambda: speechMeaning())
+btna.grid(column=0, row=12)
 win.mainloop()
-
-'''
-r = sr.Recognizer()
-with sr.Microphone() as source:
-    print("Say something!")
-    audio = r.listen(source)
-    try:
-        text = r.recognize_google(audio)
-        print("Roger that, relaying information...")
-        print(f"You said {text}")
-    except sr.UnknownValueError:
-        print("Could not understand what your saying")
-    except Exception as e:
-        quit(e)
-'''
-'''
-dictionary = PyDictionary()
-print(dictionary.meaning("big"))
-'''

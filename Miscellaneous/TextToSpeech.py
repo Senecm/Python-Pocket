@@ -1,6 +1,6 @@
 __author__ = "Gordan"
 import pyttsx3
-import speech_recognition as sr
+#import speech_recognition as sr
 engine = pyttsx3.init()
 con = engine.runAndWait()
 engine.say("Hello!")
