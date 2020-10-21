@@ -20,8 +20,9 @@ def findMeaning(word):
         #json.loads(defi)
         txtare = Text(win, height=10, width=70)
         txtare.grid(column=0, row=8)
-        txtare.insert(tk.END, defi)
-        btnb = Button(win, text="Listen", bg="black", fg="white", command = lambda: relaySound(txtare.get()))
+        print(defi)
+        txtare.insert(tk.END, str(defi))
+        btnb = Button(win, text="Listen", bg="black", fg="white", command = lambda: relaySound(txtare.get("1.0", END)))
         btnb.grid(column=0, row=7)
     except Exception as e:
         print(e)
@@ -40,7 +41,7 @@ def speechMeaning():
         txtarea = Text(win, height=10, width=70)
         txtarea.grid(column=0, row=13)
         txtarea.insert(tk.END, defi)
-        btnb = Button(win, text="Listen", bg="black", fg="white", command = lambda: relaySound(txtarea.get()))
+        btnb = Button(win, text="Listen", bg="black", fg="white", command = lambda: relaySound(txtarea.get("1.0", END)))
         btnb.grid(column=0, row=11)
     except Exception as e:
         print(e)
