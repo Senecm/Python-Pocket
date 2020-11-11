@@ -5,3 +5,6 @@
 body {
     background-color: aquamarine;
 }
+h1, h2, h4, h5 {
+    color: brown;
+}
