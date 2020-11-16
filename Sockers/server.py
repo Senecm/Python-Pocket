@@ -13,7 +13,7 @@ server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1) #allows the server 
 server.bind(ADDR) #binding the socket to an adress the sever and the respective port
 
 def handle_client(conn, addr): #Client handler, will run for each client
-    print(f"[NEW CONNECTION] {addr} connected.")
+    print(f"[NEW CONNECTION] {addr} connected. \n")
     connected = True
     while connected:
         msgLength = conn.recv(HEADER).decode(FORMAT) #waits to recieve a message from a client, decodes it from bytes to utf-8 string
