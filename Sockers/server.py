@@ -23,6 +23,7 @@ def handle_client(conn, addr): #Client handler, will run for each client
             if msg == DISCONNECT_MESSAGE: #if disconnect message is evoked
                 connected = False #exit the loop
             print(f"[{addr}] {msg}")
+            conn.send("[SERVER] Msg recieved".encode(FORMAT))
     conn.close() #disconnecting the user
 
 def start(): #Initialise the sever
